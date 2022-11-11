@@ -135,6 +135,16 @@ class Company: CompanyProtocol {
         return budget!
     }
     
+    //If you want to add income externally
+    func addIncomeExtra(add: Double) {
+        self.budget! += add
+    }
+    
+    //If you want to add an expense externally
+    func addExpenseExtra(add: Double) {
+        self.budget! -= add
+    }
+    
     //Location of Error
     func companyErrorFunc(budget: Double, incomeInfo: Double, expenseInfo: Double) throws {
 //        if budget + incomeInfo < budget - expenseInfo {
@@ -142,7 +152,7 @@ class Company: CompanyProtocol {
 //        }
         
         //1 error handling situation came to my mind.
-        guard budget - expenseInfo > budget + incomeInfo else {
+        guard budget >= 0 else {
             throw CompanyBudgetError.debtSituation
         }
     }
@@ -181,12 +191,16 @@ print("Income: \(company1.incomeInfo!) & Expense: \(company1.expenseInfo!)")
 let incomeExpense = company1.balanceOfIncomeAndExpense()
 print("Balance of income & expense: \(incomeExpense)")
 
+company1.addIncomeExtra(add: 22000)
+company1.addExpenseExtra(add: 1000)
+
 print("Current Budget: \(company1.currentBudget)")
 do {
     try company1.companyErrorFunc(budget: company1.budget!, incomeInfo: company1.incomeInfo!, expenseInfo: company1.expenseInfo!)
 } catch CompanyBudgetError.debtSituation {
     var debtInfo = """
     
+    !!!!!WARNING!!!!!
     
     Budget: \(String(describing: company1.budget!))
     Income: \(String(describing: company1.incomeInfo!))
