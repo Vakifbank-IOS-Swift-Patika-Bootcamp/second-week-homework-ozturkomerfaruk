@@ -46,4 +46,4 @@ Kaan YILDIRIM
 
 2. soru için hazırladığım UML diagram ve daha sonrasında kodlarını yazmaya çalıştım. Kodlarına gitmek için [tıklayabilirsiniz.](https://github.com/Vakifbank-IOS-Swift-Patika-Bootcamp/second-week-homework-ozturkomerfaruk/blob/main/odev2-2.playground/Contents.swift)
 
-![image](https://user-images.githubusercontent.com/56068905/201470204-6350912d-19fe-46db-a987-f9d0123eecb9.png)
+![image](https://user-images.githubusercontent.com/56068905/201470282-f85e2de9-c33d-4b50-8787-5124f322a600.png)
