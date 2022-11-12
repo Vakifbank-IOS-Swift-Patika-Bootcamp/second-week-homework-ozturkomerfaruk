@@ -34,3 +34,16 @@
 HAVE A GOOD DAY..
 
 Kaan YILDIRIM
+
+
+
+
+
+
+----------------------------
+
+1. soru
+
+2. soru için hazırladığım UML diagram ve daha sonrasında kodlarını yazmaya çalıştım. Kodlarına gitmek için [tıklayabilirsiniz.](https://github.com/Vakifbank-IOS-Swift-Patika-Bootcamp/second-week-homework-ozturkomerfaruk/blob/main/odev2-2.playground/Contents.swift)
+
+![image](https://user-images.githubusercontent.com/56068905/201470066-484d8d65-0a47-44d2-b646-d0c61ff2ada2.png)
